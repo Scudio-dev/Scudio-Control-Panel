@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScudioControlPanel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdd8318cc35eae7b75e1d0b98ab185ed0ac948f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b0e92ec2dec8dc976ce6d62623a888cf11388a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScudioControlPanel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScudioControlPanel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

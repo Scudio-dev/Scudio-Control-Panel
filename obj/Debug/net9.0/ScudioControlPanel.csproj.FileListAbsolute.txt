@@ -146,6 +146,7 @@ C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplicati
 C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\obj\Debug\net9.0\ScudioControlPanel.AssemblyInfoInputs.cache
 C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\obj\Debug\net9.0\ScudioControlPanel.AssemblyInfo.cs
 C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\obj\Debug\net9.0\ScudioControlPanel.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\obj\Debug\net9.0\ScudioControlPanel.sourcelink.json
 C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\obj\Debug\net9.0\ScudioCo.5310B554.Up2Date
 C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\obj\Debug\net9.0\ScudioControlPanel.dll
 C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\obj\Debug\net9.0\refint\ScudioControlPanel.dll
