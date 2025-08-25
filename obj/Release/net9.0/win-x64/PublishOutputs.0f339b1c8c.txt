@@ -1,0 +1,2 @@
+C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\bin\Release\net9.0\win-x64\publish\ScudioControlPanel.pdb
+C:\Users\Admin\Downloads\ScudioControlPanel\ScudioControlPanel\AvaloniaApplication1\bin\Release\net9.0\win-x64\publish\ScudioControlPanel.exe

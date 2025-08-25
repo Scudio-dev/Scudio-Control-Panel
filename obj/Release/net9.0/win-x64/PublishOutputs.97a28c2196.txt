@@ -1,0 +1,2 @@
+C:\Users\Admin\Downloads\AvaloniaApplication1\AvaloniaApplication1\AvaloniaApplication1\bin\Release\net9.0\win-x64\publish\AvaloniaApplication1.pdb
+C:\Users\Admin\Downloads\AvaloniaApplication1\AvaloniaApplication1\AvaloniaApplication1\bin\Release\net9.0\win-x64\publish\AvaloniaApplication1.exe

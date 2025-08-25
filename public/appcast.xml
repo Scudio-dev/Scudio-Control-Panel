@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+	<channel>
+		<title>ScudioControlPanel Updates</title>
+		<link>https://YOUR-VERCEL-APP.vercel.app/appcast.xml</link>
+		<item>
+			<title>1.0.1</title>
+			<enclosure
+			  url="https://github.com/Scudio-dev/Scudio-Control-Panel/releases/download/v1.0.1/ScudioControlPanel-1.0.1-win-x64.msi"
+			  sparkle:os="windows"
+			  sparkle:installerArguments="/passive"
+			  type="application/octet-stream" />
+			<!-- Add macOS/Linux enclosures later if needed -->
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,106 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ScudioControlPanel.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="ScudioControlPanel.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Scudio Control Panel"
+        Width="700"
+        Height="380"
+        CanResize="False"
+        SystemDecorations="Full"
+        WindowStartupLocation="CenterScreen"
+        Background="#F7F8FA">
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+
+	<Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="*"
+          Margin="5">
+
+		<Border Padding="12" CornerRadius="10" BorderBrush="#DDD" BorderThickness="1"
+        Background="White" Margin="8" BoxShadow="0 2 6 #22000000">
+			<DockPanel>
+				<!-- Left content -->
+				<StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center" DockPanel.Dock="Left">
+					<TextBlock Text="Scudio Control Panel" FontSize="15" FontWeight="SemiBold"/>
+					<TextBlock Text="•" Margin="4,0"/>
+					<TextBlock Text="Version:"/>
+					<!--<TextBlock Text="{Binding AppVersion}" FontWeight="Bold"/>-->
+					<TextBlock Text="{Binding LatestVersion}" FontWeight="Bold"/>
+				</StackPanel>
+
+				<!-- User Avatar -->
+				<!-- User Avatar with Name -->
+				<Button DockPanel.Dock="Right"
+						Padding="0"
+						BorderThickness="0"
+						Background="Transparent"
+						HorizontalAlignment="Right"
+						VerticalAlignment="Center">
+					<Button.Content>
+						<StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+							<!-- Round avatar -->
+							<Border Width="36" Height="36" CornerRadius="18" ClipToBounds="True">
+								<Image Source="/Assets/avatar.png" Stretch="UniformToFill"/>
+							</Border>
+							<!-- Username -->
+							<TextBlock Text="Sunil Thakur"
+									   VerticalAlignment="Center"
+									   FontWeight="SemiBold"
+									   FontSize="12"/>
+						</StackPanel>
+					</Button.Content>
+
+					<!-- Dropdown Flyout -->
+					<Button.Flyout>
+						<MenuFlyout>
+							<MenuItem Header="Profile" />
+							<MenuItem Header="Check for updates"/>
+							<MenuItem Header="Support"/>
+						</MenuFlyout>
+					</Button.Flyout>
+				</Button>
+
+			</DockPanel>
+		</Border>
+
+
+		<!-- Content -->
+		<Border Grid.Row="1" Padding="16" CornerRadius="10" BorderBrush="#DDD" BorderThickness="1"
+                Background="White" Margin="8" BoxShadow="0 2 6 #22000000">
+			<StackPanel Spacing="12">
+				<TextBlock Text="Auto Refresh" FontWeight="Bold" FontSize="16"/>
+
+				<StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+					<ToggleSwitch IsChecked="{Binding IsAutoRefreshEnabled}" Content="Enabled"/>
+					<TextBlock Text="Interval:" VerticalAlignment="Center"/>
+					<TextBlock Text="{Binding RefreshIntervalSeconds}" FontWeight="Bold"/>
+					<TextBlock Text="sec"/>
+					<Button Content="Refresh Now" Command="{Binding RefreshCommand}"/>
+				</StackPanel>
+
+				<Slider Minimum="1" Maximum="3600" Value="{Binding RefreshIntervalSeconds}" TickFrequency="5"/>     
+
+				<StackPanel Orientation="Horizontal" Spacing="8">
+					<TextBlock Text="Presets:" VerticalAlignment="Center"/>
+					<Button Content="15s" Command="{Binding SetIntervalCommand}" CommandParameter="15"/>
+					<Button Content="30s" Command="{Binding SetIntervalCommand}" CommandParameter="30"/>
+					<Button Content="1m" Command="{Binding SetIntervalCommand}" CommandParameter="60"/>
+					<Button Content="5m" Command="{Binding SetIntervalCommand}" CommandParameter="300"/>
+					<Button Content="10m" Command="{Binding SetIntervalCommand}" CommandParameter="600"/>
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+					<TextBlock Text="Last Refreshed:" VerticalAlignment="Center"/>
+					<TextBlock Text="{Binding LastRefreshedAt}" VerticalAlignment="Center"/>
+				</StackPanel>
+			</StackPanel>
+		</Border>
+
+	</Grid>
+</Window>
